@@ -33,7 +33,7 @@ namespace El_Market
                 //SqlCommand cmd = new SqlCommand();
                 //string query = "insert into StaffTbl values(" + txtStaffID.Text + ",'" + txtStaffName.Text + "'," + txtStaffPhone.Text + ","  + txtStaffUsername.Text + "," + ",'" + txtStaffPassword.Text + "')";
 
-                SqlCommand cmd = new SqlCommand("insert into StaffTbl values('" + txtStaffID.Text + "','" + txtStaffName.Text + "','" + txtStaffPhone.Text + "','" + txtStaffPassword.Text + "')", con);
+                SqlCommand cmd = new SqlCommand("insert into StaffTbl values('" + txtStaffID.Text + "','" + txtStaffName.Text + "','" + txtStaffPhone.Text + "','" + txtStaffUsername.Text + "','" + txtStaffPassword.Text + "')", con);
                 //cmd.CommandText = @"INSERT INTO StaffTbl VALUES(@ID, @Name, @Phone, @Username, @Password)";
                 //cmd.Parameters.AddWithValue("@ID", txtStaffID.Text);
                 //cmd.Parameters.AddWithValue("@Name", txtStaffName.Text);

@@ -37,7 +37,7 @@ namespace El_Market
                     {
                         if (txtUsername.Text == "Admin" && txtPassword.Text == "Admin")
                         {
-                            InventoryForm Prod = new InventoryForm();
+                            StaffForm Prod = new StaffForm();
                             Prod.Show();
                             this.Hide();
                         }
@@ -56,7 +56,7 @@ namespace El_Market
                         if (dt.Rows[0][0].ToString() == "1")
                         {
                             StaffUsername = txtUsername.Text;
-                            CheckForm sell = new CheckForm();
+                            InventoryForm sell = new InventoryForm();
                             sell.Show();
                             this.Hide();
                             con.Close();

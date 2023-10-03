@@ -53,7 +53,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.btnSelling = new System.Windows.Forms.Button();
             this.btnCategories = new System.Windows.Forms.Button();
             this.btnStaff = new System.Windows.Forms.Button();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
@@ -461,27 +460,13 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // btnSelling
-            // 
-            this.btnSelling.FlatAppearance.BorderSize = 0;
-            this.btnSelling.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelling.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelling.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnSelling.Location = new System.Drawing.Point(3, 252);
-            this.btnSelling.Name = "btnSelling";
-            this.btnSelling.Size = new System.Drawing.Size(128, 36);
-            this.btnSelling.TabIndex = 10;
-            this.btnSelling.Text = "CheckUp";
-            this.btnSelling.UseVisualStyleBackColor = true;
-            this.btnSelling.Click += new System.EventHandler(this.btnSelling_Click);
-            // 
             // btnCategories
             // 
             this.btnCategories.FlatAppearance.BorderSize = 0;
             this.btnCategories.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategories.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategories.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnCategories.Location = new System.Drawing.Point(3, 294);
+            this.btnCategories.Location = new System.Drawing.Point(3, 241);
             this.btnCategories.Name = "btnCategories";
             this.btnCategories.Size = new System.Drawing.Size(131, 36);
             this.btnCategories.TabIndex = 11;
@@ -537,7 +522,6 @@
             this.ClientSize = new System.Drawing.Size(1280, 768);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnLogout);
-            this.Controls.Add(this.btnSelling);
             this.Controls.Add(this.btnCategories);
             this.Controls.Add(this.btnStaff);
             this.Controls.Add(this.btnClose);
@@ -572,7 +556,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Button btnSelling;
         private System.Windows.Forms.Button btnCategories;
         private System.Windows.Forms.Button btnStaff;
         private Bunifu.Framework.UI.BunifuImageButton btnClose;

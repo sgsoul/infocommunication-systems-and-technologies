@@ -38,6 +38,7 @@ namespace El_Market
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                con.Close();
             }
         }
 
@@ -117,7 +118,7 @@ namespace El_Market
                 else
                 {
                     con.Open();
-                    string query = "update ItemsTbl set ItemName='" + txtItemName.Text + "',ItemCond=" + txtItemCond.Text + ",ItemQuantity=" + txtItemQty.Text + ",ItemCategory='" + cbSelectCategory.SelectedValue.ToString() + "' where ItemId=" + txtItemID.Text + "; ";
+                    string query = "update ItemsTbl set ItemName='" + txtItemName.Text + "',ItemCond=" + txtItemCond.Text + ",ItemQty=" + txtItemQty.Text + ",ItemCategory='" + cbSelectCategory.SelectedValue.ToString() + "' where ItemId=" + txtItemID.Text + "; ";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Item Successfully Updated");
@@ -132,6 +133,7 @@ namespace El_Market
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                con.Close();
             }
         }
 
@@ -162,6 +164,7 @@ namespace El_Market
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                con.Close();
             }
         }
 
